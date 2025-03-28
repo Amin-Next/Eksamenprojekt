@@ -4,6 +4,6 @@ function setup()
 }
 
 function draw()
-{
+{ "Hej"
 
 }
