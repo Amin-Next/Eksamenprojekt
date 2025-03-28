@@ -1,11 +1,13 @@
 function setup() 
 {
 	createCanvas(400, 400);
+    aminSetup();
+    abdulahiSetup()
+
 }
 
 function draw()
-{ "Hej"
-"hej again"
-"hej trejde gang"
-"hej igen"
+{ 
+    aminDraw();
+    abdulahiDraw();
 }
