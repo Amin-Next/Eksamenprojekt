@@ -6,5 +6,6 @@ function setup()
 function draw()
 { "Hej"
 "hej again"
-"nope"
+"hej trejde gang"
+"hej igen"
 }
