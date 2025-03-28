@@ -1,5 +1,5 @@
 function abdulahiSetup(){
-    circle(100,300,150)
+    circle(300,300,150)
 }
 
 function abdulahiDraw(){
