@@ -1,5 +1,5 @@
 function aminSetup(){
-    circle(100,200,150)
+    circle(150,100,150)
 }
 
 function aminDraw(){
