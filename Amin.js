@@ -1,8 +1,21 @@
 function aminSetup(){
-    fill("red")
-    circle(150,100,150)
+   
 }
 
 function aminDraw(){
+    let buttonA = createButton('Big bio');
+    buttonA.position(width/2-width*2/8-2, height/2);
+    buttonA.mousePressed(changePageToA);
 
+    let buttonB = createButton('Palads bio');
+    buttonB.position(width/2+width/8-94, height/2);
+    buttonB.mousePressed(changePageToB);
+
+    let buttonC = createButton('Vue bio');
+    buttonC.position(width/2+width/8-15, height/2);
+    buttonC.mousePressed(changePageToB);
+
+    let buttonD = createButton('Falkoner bio');
+    buttonD.position(width/+50, height/2);
+    buttonD.mousePressed(changePageToB);
 }
