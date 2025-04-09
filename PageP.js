@@ -121,6 +121,7 @@ function mousePressed() {
     rectArr[i].c=color("yellow")
     rectArr[i].selected=true
     console.log("This: "+i)
+     Pris();
    break;
  }
 }
