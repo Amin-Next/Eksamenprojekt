@@ -68,7 +68,8 @@ function draw() {
   textAlign(CENTER, CENTER);
   fill("white");
   let seatNum = seatSelected()
-  text(`Pladser ${seatNum}`,width/2,height-350)
+  let seatPrice=Pris()
+  text(`Pladser ${seatNum},  ${seatPrice}kr`,width/2,height-350)
 
 
 }  
@@ -85,7 +86,6 @@ function showrectangle(list){
 
 function seatSelected(){
   let number=0;
-  let pris=120;
   for (let i=0; i<rectArr.length; i++)  {
     if (rectArr[i].selected){
       number++;
