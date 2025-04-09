@@ -8,9 +8,6 @@ let recta = {
   c: undefined
 };
 
-
-
-
 let rectArr, num= 4, row= 4;
 
 function number(recta, num) {
@@ -33,17 +30,13 @@ return list;
 }
 
 function setup(){
- 
   textSize(20)
   textAlign(CENTER, CENTER);
   fill("white");
   text("pladser",width/2,height/2)
   let buttonBack = createButton('go back');
   buttonBack.position(width/2-width*2/8, height/2);
-  buttonBack.mousePressed(goHome);
-
-  //Udkommenterer de filer som andre arbejder på,
-  //hvis de ikke virker endnu.    
+  buttonBack.mousePressed(goHome); 
   includeFileX();
   includeFileY();  
   createCanvas(400,400);
@@ -57,10 +50,10 @@ function setup(){
   }
   for (let i=rectArr.length/2-8; i<rectArr.length; i++){
       
-      rectArr[i].c=color("darkblue")
-      
+      rectArr[i].c=color("darkblue")   
   }
 }
+
 function draw() {
   background("black");
   showrectangle(rectArr);
@@ -70,9 +63,8 @@ function draw() {
   let seatNum = seatSelected()
   let seatPrice=Pris()
   text(`Pladser ${seatNum},  ${seatPrice}kr`,width/2,height-350)
-
-
 }  
+
 function showrectangle(list){
   for (let i=0; i<list.length; i++)   {
     fill(list[i].c)
@@ -80,8 +72,7 @@ function showrectangle(list){
           rect(list[i].x, list[i].y, list[i].w, list[i].h);
     }
      
-  }
-      
+  }   
 }
 
 function seatSelected(){
@@ -93,8 +84,6 @@ function seatSelected(){
 
   }
   return number;
-
-  
 
 }
 function Pris(){
@@ -108,7 +97,6 @@ function Pris(){
   console.log(total); 
   return total;
 }
-
 
 function mousePressed() {
   for (let i = rectArr.length - 1; i >= 0; i--)   {
@@ -125,6 +113,7 @@ function mousePressed() {
    break;
  }
 }
+
 }
 function goHome(){
   window.location.href = "index.html";
