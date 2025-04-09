@@ -106,7 +106,7 @@ function mousePressed() {
        mouseY > rectArr[i].y &&
        mouseY < rectArr[i].y + rectArr[i].h
        )   {
-    rectArr[i].c=color("yellow")
+    rectArr[i].c=color("Darkgreen")
     rectArr[i].selected=true
     console.log("This: "+i)
      Pris();
