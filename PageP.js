@@ -8,7 +8,7 @@ let recta = {
   c: undefined
 };
 
-let rectArr, num= 4, row= 4;
+let rectArr, num= 8, row= 8;
 
 function number(recta, num) {
   let list = [];
@@ -46,7 +46,7 @@ function setup(){
   
   for (let i=rectArr.length/8+10; i<rectArr.length; i++){
       
-    rectArr[i].c=color(100,40,10)
+    rectArr[i].c=color("darkblue")
   }
   for (let i=rectArr.length/2-8; i<rectArr.length; i++){
       
