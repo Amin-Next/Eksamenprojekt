@@ -106,10 +106,16 @@ function mousePressed() {
        mouseY > rectArr[i].y &&
        mouseY < rectArr[i].y + rectArr[i].h
        )   {
-    rectArr[i].c=color("Darkgreen")
-    rectArr[i].selected=true
-    console.log("This: "+i)
-     Pris();
+    if (
+      rectArr[i].selected === false
+    ) {
+      rectArr[i].c = color("Darkgreen");
+      rectArr[i].selected = true;
+    } else {
+      rectArr[i].c = color("darkblue");
+      rectArr[i].selected = false;
+    }
+    Pris();
    break;
  }
 }
