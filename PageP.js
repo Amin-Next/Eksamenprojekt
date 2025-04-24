@@ -9,7 +9,7 @@ let recta = {
 };
 let Total
 
-let rectArr, num= 8, row= 4;
+let rectArr, num= 12, row= 4;
 
 function number(recta, num) {
   let list = [];
@@ -39,12 +39,12 @@ function setup(){
   buttonBack.position(width/2-42, height/2-43);
   buttonBack.mousePressed(goHome); 
   let buttonBuy = createButton('køb biletter');
-  buttonBuy.position(width/2+276,height/2-5);
+  buttonBuy.position(width/2+500,height/2-5);
   buttonBuy.mousePressed(buySeats);
   includeFileX();
   includeFileY();  
 
-  createCanvas(400,400);
+  createCanvas(600,400);
 
   strokeWeight(1);
   rectArr= number(recta,num);
@@ -124,15 +124,14 @@ function mousePressed() {
    break;
  }
 }
-function changeToPageT(){
-  storeItem("Total",Total);
-  window.location.href = "pageT.html";
 }
-}
+
+
 function goHome(){
   window.location.href = "index.html";
 
 }
 function buySeats(){
+  storeItem("Total",Total);
   window.location.href = "pageT.html";
 }
