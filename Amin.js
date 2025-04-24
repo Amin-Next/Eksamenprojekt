@@ -1,5 +1,5 @@
 function aminSetup(){
-   //hello
+   
 }
 let valgtBiograf = "";
 let visForside = true;

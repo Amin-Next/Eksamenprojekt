@@ -1,4 +1,4 @@
-function aminSetup(){
+/*function aminSetup(){
    
 }
 let valgtBiograf = "";
