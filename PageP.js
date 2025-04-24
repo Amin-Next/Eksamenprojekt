@@ -8,7 +8,7 @@ let recta = {
   c: undefined
 };
 
-let rectArr, num= 8, row= 8;
+let rectArr, num= 8, row= 4;
 
 function number(recta, num) {
   let list = [];
@@ -35,8 +35,11 @@ function setup(){
   fill("white");
   text("pladser",width/2,height/2)
   let buttonBack = createButton('go back');
-  buttonBack.position(width/2-width*2/8, height/2);
+  buttonBack.position(width/2-42, height/2-43);
   buttonBack.mousePressed(goHome); 
+  let buttonBuy = createButton('køb biletter');
+  buttonBuy.position(width/2+276,height/2-5);
+  buttonBuy.mousePressed(buySeats);
   includeFileX();
   includeFileY();  
   createCanvas(400,400);
@@ -123,5 +126,9 @@ function mousePressed() {
 }
 function goHome(){
   window.location.href = "index.html";
+
+}
+function buySeats(){
+  window.location.href = "pageT.html";
 
 }

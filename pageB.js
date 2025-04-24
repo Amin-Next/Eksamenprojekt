@@ -5,7 +5,7 @@ function setup(){
     textAlign(CENTER, CENTER);
     text("Page B",width/2,height/2)
     let buttonBack = createButton('go back');
-    buttonBack.position(width/2-width*2/8, height/2);
+    buttonBack.position(width/2-200, height/2-200);
     buttonBack.mousePressed(goHome);
 
     //Udkommenterer de filer som andre arbejder på,
