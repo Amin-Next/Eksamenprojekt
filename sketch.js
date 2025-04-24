@@ -71,5 +71,4 @@ function overKnap(y) {
   return mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
          mouseY > y && mouseY < y + 40;
 }
- 
- 
+
