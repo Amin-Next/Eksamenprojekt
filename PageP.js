@@ -7,6 +7,7 @@ let recta = {
   selected: false,
   c: undefined
 };
+let Total
 
 let rectArr, num= 8, row= 4;
 
@@ -42,6 +43,7 @@ function setup(){
   buttonBuy.mousePressed(buySeats);
   includeFileX();
   includeFileY();  
+
   createCanvas(400,400);
 
   strokeWeight(1);
@@ -91,7 +93,7 @@ function seatSelected(){
 }
 function Pris(){
   let Pris = 120;
-  let Total = 0;
+  Total = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
       Total += Pris;
@@ -122,7 +124,10 @@ function mousePressed() {
    break;
  }
 }
-
+function changeToPageT(){
+  storeItem("Total",Total);
+  window.location.href = "pageT.html";
+}
 }
 function goHome(){
   window.location.href = "index.html";
@@ -130,5 +135,4 @@ function goHome(){
 }
 function buySeats(){
   window.location.href = "pageT.html";
-
 }
