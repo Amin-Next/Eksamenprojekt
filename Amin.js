@@ -1,6 +1,3 @@
-function aminSetup(){
-   
-}
 let valgtBiograf = "";
 let visForside = true;
 
@@ -17,13 +14,13 @@ function draw() {
   if (visForside) {
     text("Vælg en biograf", width / 2, 50);
 
- 
     drawBiografKnap("CinemaxX", 100);
     drawBiografKnap("Nordisk Film", 170);
     drawBiografKnap("Imperial", 240);
   } else {
-    text("Du valgte: " + valgtBiograf, width / 2, 100);
+    text("Du valgte: " + valgtBiograf, width / 2, 60);
     drawTilbageKnap();
+    drawBilletKnap();
   }
 }
 
@@ -41,9 +38,15 @@ function drawTilbageKnap() {
   text("Tilbage", 70, 40);
 }
 
+function drawBilletKnap() {
+  fill(100, 255, 100);
+  rect(width / 2 - 75, 150, 150, 40, 10);
+  fill(0);
+  text("Billetter", width / 2, 170);
+}
+
 function mousePressed() {
   if (visForside) {
-
     if (overKnap(100)) {
       valgtBiograf = "CinemaxX";
       visForside = false;
@@ -58,6 +61,11 @@ function mousePressed() {
     if (mouseX > 20 && mouseX < 120 && mouseY > 20 && mouseY < 60) {
       visForside = true;
     }
+
+    if (mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
+        mouseY > 150 && mouseY < 190) {
+      alert("Her kunne du vælge billetter til " + valgtBiograf);
+    }
   }
 }
 
@@ -65,4 +73,7 @@ function overKnap(y) {
   return mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
          mouseY > y && mouseY < y + 40;
 }
-
+/*
+function drawBilletKnap(){
+  window.location.href = "PageP.html";
+}
