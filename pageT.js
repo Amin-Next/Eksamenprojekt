@@ -1,7 +1,8 @@
 //Person B skriver sin kode her 
 function setup(){
+    background(50);
     createCanvas(400,400)
-  
+   
     textSize(20)
     textAlign(CENTER, CENTER);
     text("køb billetter",width/2,height/2)
