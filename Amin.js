@@ -17,7 +17,7 @@ function draw() {
   if (visForside) {
     text("Vælg en biograf", width / 2, 50);
 
-    // Knapper som firkanter/
+ 
     drawBiografKnap("CinemaxX", 100);
     drawBiografKnap("Nordisk Film", 170);
     drawBiografKnap("Imperial", 240);
@@ -43,7 +43,7 @@ function drawTilbageKnap() {
 
 function mousePressed() {
   if (visForside) {
-    // Tjek om man klikker på en af biografknapperne
+
     if (overKnap(100)) {
       valgtBiograf = "CinemaxX";
       visForside = false;
@@ -55,7 +55,6 @@ function mousePressed() {
       visForside = false;
     }
   } else {
-    // Tjek om man klikker på "Tilbage"
     if (mouseX > 20 && mouseX < 120 && mouseY > 20 && mouseY < 60) {
       visForside = true;
     }
