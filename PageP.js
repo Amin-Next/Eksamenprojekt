@@ -91,14 +91,14 @@ function seatSelected(){
 }
 function Pris(){
   let pris = 120;
-  let total = 0;
+  let TotalPrice = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
       total += pris;
     }
   }
-  console.log(total); 
-  return total;
+  console.log(TotalPrice); 
+  return TotalPrice;
 }
 
 function mousePressed() {
