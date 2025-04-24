@@ -58,13 +58,15 @@ function mousePressed() {
       visForside = false;
     }
   } else {
+    // Tilbage-knap
     if (mouseX > 20 && mouseX < 120 && mouseY > 20 && mouseY < 60) {
       visForside = true;
     }
 
+    // Billet-knap (åbner ny side)
     if (mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
         mouseY > 150 && mouseY < 190) {
-      alert("Her kunne du vælge billetter til " + valgtBiograf);
+      window.location.href = "PageP.html";
     }
   }
 }
@@ -72,8 +74,4 @@ function mousePressed() {
 function overKnap(y) {
   return mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
          mouseY > y && mouseY < y + 40;
-}
-/*
-function drawBilletKnap(){
-  window.location.href = "PageP.html";
 }
