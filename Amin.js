@@ -1,33 +1,68 @@
 function aminSetup(){
    
 }
+let valgtBiograf = "";
+let visForside = true;
 
-function aminDraw(){  
-     let cinemas = ["CinemaxX", "Nordisk Film", "Imperial"];
-    let buttons = [];
-    
-    function setup() {
-      createCanvas(600, 400);
-      textAlign(CENTER, CENTER);
-      textSize(24);
-      
-      for (let i = 0; i < cinemas.length; i++) {
-        let btn = createButton(cinemas[i]);
-        btn.position(width / 2 - 50, 100 + i * 60);
-        btn.size(100, 40);
-        btn.mousePressed(() => selectCinema(cinemas[i]));
-        buttons.push(btn);
-      }
+function setup() {
+  createCanvas(600, 400);
+  textAlign(CENTER, CENTER);
+  textSize(20);
+}
+
+function draw() {
+  background(50);
+  fill(255);
+
+  if (visForside) {
+    text("Vælg en biograf", width / 2, 50);
+
+    // Knapper som firkanter/
+    drawBiografKnap("CinemaxX", 100);
+    drawBiografKnap("Nordisk Film", 170);
+    drawBiografKnap("Imperial", 240);
+  } else {
+    text("Du valgte: " + valgtBiograf, width / 2, 100);
+    drawTilbageKnap();
+  }
+}
+
+function drawBiografKnap(navn, y) {
+  fill(100, 150, 255);
+  rect(width / 2 - 75, y, 150, 40, 10);
+  fill(0);
+  text(navn, width / 2, y + 20);
+}
+
+function drawTilbageKnap() {
+  fill(255, 100, 100);
+  rect(20, 20, 100, 40, 10);
+  fill(0);
+  text("Tilbage", 70, 40);
+}
+
+function mousePressed() {
+  if (visForside) {
+    // Tjek om man klikker på en af biografknapperne
+    if (overKnap(100)) {
+      valgtBiograf = "CinemaxX";
+      visForside = false;
+    } else if (overKnap(170)) {
+      valgtBiograf = "Nordisk Film";
+      visForside = false;
+    } else if (overKnap(240)) {
+      valgtBiograf = "Imperial";
+      visForside = false;
     }
-    
-    function draw() {
-      background(30);
-      fill(255);
-      text("Vælg en biograf", width / 2, 50);
+  } else {
+    // Tjek om man klikker på "Tilbage"
+    if (mouseX > 20 && mouseX < 120 && mouseY > 20 && mouseY < 60) {
+      visForside = true;
     }
-    
-    function selectCinema(name) {
-      alert("Du har valgt: " + name);
-      // Her kan du f.eks. skifte til en ny side eller opdatere indhold
-    } 
+  }
+}
+
+function overKnap(y) {
+  return mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
+         mouseY > y && mouseY < y + 40;
 }

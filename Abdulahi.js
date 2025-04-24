@@ -1,7 +1,0 @@
-function abdulahiSetup(){
-   
-}
-
-function abdulahiDraw(){
-
-}
