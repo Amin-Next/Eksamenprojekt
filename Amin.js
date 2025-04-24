@@ -8,12 +8,6 @@ function setup() {
   createCanvas(600, 400);
   textAlign(CENTER, CENTER);
   textSize(20);
-  textSize(20)
-    
-  
-  let buttonPlads = createButton('Vælg pladser');
-  buttonPlads.position(width/2-300,height/2-200);
-  buttonPlads.mousePressed(pladser);
 }
 
 function draw() {
@@ -71,5 +65,4 @@ function overKnap(y) {
   return mouseX > width / 2 - 75 && mouseX < width / 2 + 75 &&
          mouseY > y && mouseY < y + 40;
 }
- 
- 
+
