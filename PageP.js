@@ -90,15 +90,15 @@ function seatSelected(){
 
 }
 function Pris(){
-  let pris = 120;
-  let total = 0;
+  let Pris = 120;
+  let Total = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
-      total += pris;
+      Total += Pris;
     }
   }
-  console.log(total); 
-  return total;
+  console.log(Total); 
+  return Total;
 }
 
 function mousePressed() {
