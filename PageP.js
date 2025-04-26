@@ -125,7 +125,7 @@ function mousePressed() {
 
 
 function goHome(){
-  window.location.href = "Amin.html";
+  window.location.href = "Index.html";
 }
 function buySeats(){
   storeItem("Total",Total);
