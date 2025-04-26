@@ -89,7 +89,7 @@ function seatSelected(){
 
 }
 function Pris(){
-  let Pris = 120;
+  let Pris = 130;
   Total = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
@@ -125,7 +125,7 @@ function mousePressed() {
 
 
 function goHome(){
-  window.location.href = "index.html";
+  window.location.href = "Amin.html";
 }
 function buySeats(){
   storeItem("Total",Total);
