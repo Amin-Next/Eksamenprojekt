@@ -41,9 +41,6 @@ function setup(){
   let buttonBuy = createButton('køb biletter');
   buttonBuy.position(width/2+476,height/2-43);
   buttonBuy.mousePressed(buySeats);
-  /*includeFileX();
-  includeFileY();*/
-
   createCanvas(600,400);
 
   strokeWeight(1);

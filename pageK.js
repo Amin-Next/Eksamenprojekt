@@ -29,7 +29,7 @@ function setup(){
     text("Indtast din e-mail",width/2-140,height/2+5)
     input_3 = createInput('');
     input_3.position(width/2-50,height/2+30);
-    text("Indtast din telefonnummer",width/2-175,height/2+35)
+    text("Indtast din telefonnummer",width/2-178,height/2+35)
     fill("Darkgreen")
     rect(width/2-25,height/2+50,100,30)
     fill("white")
