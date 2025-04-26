@@ -132,5 +132,5 @@ function goHome(){
 }
 function buySeats(){
   storeItem("Total",Total);
-  window.location.href = "pageT.html";
+  window.location.href = "pageK.html";
 }
