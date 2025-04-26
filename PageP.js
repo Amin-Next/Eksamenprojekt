@@ -7,7 +7,7 @@ let recta = {
   selected: false,
   c: undefined
 };
-let Total
+
 
 let rectArr, num= 12, row= 4;
 
@@ -39,10 +39,10 @@ function setup(){
   buttonBack.position(width/2-42, height/2-43);
   buttonBack.mousePressed(goHome); 
   let buttonBuy = createButton('køb biletter');
-  buttonBuy.position(width/2+500,height/2-5);
+  buttonBuy.position(width/2+476,height/2-43);
   buttonBuy.mousePressed(buySeats);
-  includeFileX();
-  includeFileY();  
+  /*includeFileX();
+  includeFileY();*/
 
   createCanvas(600,400);
 
@@ -129,7 +129,6 @@ function mousePressed() {
 
 function goHome(){
   window.location.href = "index.html";
-
 }
 function buySeats(){
   storeItem("Total",Total);
