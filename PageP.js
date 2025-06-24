@@ -1,6 +1,6 @@
 let recta = {
   x: 0,
-  y: 250,
+  y: 200,
   w: 50,
   h: 50,
   visable: true,
@@ -18,7 +18,7 @@ function number(recta, num) {
   for (let i = 0; i < num; i++)   {
       list.push({
           x: recta.x+i*50,
-          y: recta.y+r*50-50,
+          y: recta.y+r*50,
           w: recta.w,
           h: recta.h,
           visable: recta.visable,
