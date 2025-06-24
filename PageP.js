@@ -46,10 +46,7 @@ function setup(){
   strokeWeight(1);
   rectArr= number(recta,num);
   
-  for (let i=rectArr.length/8+10; i<rectArr.length; i++){
-      
-    rectArr[i].c=color("darkblue")
-  }
+
 }
 
 function draw() {
