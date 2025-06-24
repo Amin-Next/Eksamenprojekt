@@ -35,7 +35,7 @@ function setup(){
   textAlign(CENTER, CENTER);
   fill("white");
   text("pladser",width/2,height/2)
-  let buttonBack = createButton('go back');
+  let buttonBack = createButton('tilbage');
   buttonBack.position(width/2-42, height/2-43);
   buttonBack.mousePressed(goHome); 
   let buttonBuy = createButton('køb biletter');
