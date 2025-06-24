@@ -90,7 +90,7 @@ function seatSelected(){
 }
 function Pris(){
   let Pris = 130;
-  let Total = 0;
+  Total = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
       Total += Pris;
