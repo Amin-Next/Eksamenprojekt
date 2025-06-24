@@ -50,10 +50,6 @@ function setup(){
       
     rectArr[i].c=color("darkblue")
   }
-  for (let i=rectArr.length/2-8; i<rectArr.length; i++){
-      
-      rectArr[i].c=color("darkblue")   
-  }
 }
 
 function draw() {
