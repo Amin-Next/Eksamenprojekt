@@ -39,7 +39,7 @@ function setup(){
   buttonBack.position(width/2-42, height/2-43);
   buttonBack.mousePressed(goHome); 
   let buttonBuy = createButton('køb biletter');
-  buttonBuy.position(width/2+476,height/2-43);
+  buttonBuy.position(width+150,height-30);
   buttonBuy.mousePressed(buySeats);
   createCanvas(600,400);
 
@@ -90,7 +90,7 @@ function seatSelected(){
 }
 function Pris(){
   let Pris = 130;
-  Total = 0;
+  let Total = 0;
   for (let i = 0; i < rectArr.length; i++) {
     if (rectArr[i].selected) {
       Total += Pris;
